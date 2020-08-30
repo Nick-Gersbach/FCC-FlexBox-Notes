@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 5px solid #ffcc5c;
+            display: flex;
+            /* We set the container to display flex and all of the nav items lines up next to each other side by side. */
+
+
+            flex-direction: column;
+            /* Sets the flex items verticlally in a straight line. Must use flex-direction: column to achieve this.  */
+
+
+            flex-direction: row;
+            /* Sets flex items side by side. It is also the default setting for anything displayed flex  */
+
+
+
+        }
+
+        div {
+            margin: 5px;
+            /* We have the divs a margin of 5px so the nav divs seperated a little */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container">
+        <div>Home</div>
+        <div>Search</div>
+        <div>Logout</div>
+    </nav>
+</body>
+
+</html>

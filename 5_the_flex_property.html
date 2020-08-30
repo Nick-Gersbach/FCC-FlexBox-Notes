@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            border: 5px solid #ffcc5c;
+
+        }
+
+        .container div {
+            /* flex: 1; */
+            /* sets all items in flex container to equal parts of the container and makes them mobile responsive */
+        }
+
+        /* .container .search {
+            /* flex: 2; */
+        /* You can target individual items in a flex container and make them bigger than other items. We targeted search and used flex 2 to make it twice as wide as other items in the container. 
+        }
+        */
+
+        */ div {
+
+            font-size: 18px;
+        }
+
+        .home {
+            background: lightblue;
+            padding: 9px 24px;
+            flex: 2;
+        }
+
+        .search {
+            background: coral;
+            padding: 9px 24px;
+        }
+
+        .logout {
+            background: greenyellow;
+            padding: 9px 24px;
+            flex: 2;
+        }
+
+        /* .profile {
+            background: coral;
+            padding: 9px 24px;
+        } */
+    </style>
+
+    <!-- 
+
+    
+        flex 1 - sets all items in flex container to equal parts of the container and makes them mobile responsive
+
+        flex is shorthand for 3 properties...
+        (flex-grow, flex-shrink, flex-basis)
+
+     -->
+</head>
+
+<body>
+    <nav class="container">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+        <!-- <div class="profile">profile</div> -->
+    </nav>
+</body>
+
+</html>

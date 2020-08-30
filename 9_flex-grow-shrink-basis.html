@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex, grow, shrink, basis
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            padding: 10px;
+            background-color: #ffeead;
+        }
+
+        .container {
+            display: flex;
+            max-width: 800px;
+            border: 5px solid #ffcc5c;
+            margin: auto;
+
+        }
+
+        div {
+
+            font-size: 18px;
+        }
+
+        .home {
+            background: lightblue;
+            padding: 9px 24px;
+            /* flex: 1; */
+            text-align: center;
+            flex-basis: 200px;
+        }
+
+        .search {
+            background: coral;
+            padding: 9px 24px;
+        }
+
+        .logout {
+            background: greenyellow;
+            padding: 9px 24px;
+            /* flex: 1; */
+            text-align: center;
+            flex-basis: 200px;
+
+        }
+    </style>
+
+    <!-- 
+        flex is shorthand for flex-grow, flex-shrink, and flex-basis.
+
+        When you set flex: 1; you are actually setting all 3 of them to 1.
+
+        if you want to cotrol all 3 they go in this order.
+
+        flex: flex-grow, flex-shrink, flex-basis
+
+        flex-basis - sets the base width of an element that is in a flex container. If you set both home and logout to flex-basis of 200px, they will be at least 200px wide as long as the flex container is at least 400px wide. if the container shrinks, home and logout will shrink down responsivley automatically.
+
+        flex-grow - 1 will tell the flex items to grow with the container as it expands. if you set one item to flex-grow 1 and one to 5 the other will grow at a 5 times faster rate etc.
+
+        flex-shrink - same thing as flex grow, the items will just get smaller. flex-grow is set to one by default so each item shrinks with the size of the container.
+    
+
+     -->
+</head>
+
+<body>
+    <nav class="container">
+        <div class="home">Home</div>
+
+        <div class="logout">Logout</div>
+    </nav>
+</body>
+
+</html>

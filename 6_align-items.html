@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            padding: 10px;
+            background-color: #ffeead;
+        }
+
+        .container {
+            display: flex;
+            border: 5px solid #ffcc5c;
+            height: 100%;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            align-items: center;
+
+        }
+
+        .home {
+            background: lightblue;
+            padding: 9px 24px;
+            align-self: flex-end;
+        }
+
+        .search {
+            background: coral;
+            padding: 9px 24px;
+        }
+
+        .logout {
+            background: greenyellow;
+            padding: 9px 24px;
+            align-self: flex-start;
+
+        }
+    </style>
+</head>
+<!-- 
+    Align items has several different properties.
+
+    flex-stretch - default property that strecthes the flex items down to the edge of the container they are in. If you make the body height and container height 100% the items would stretch all the way down to the bottom of whatever screen they were on.
+
+    flex-start - align items to the top lefthand area of their container
+
+    flex-end - pushes items downards towards the end of the cross axis
+
+    align items - Centers items in a container vertically. used with justify content center to also center horizonatally.
+
+    align-self - allows you to target a single item in a flex container and align it how you want. (see logout)
+
+ -->
+
+<body>
+    <nav class="container">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+    </nav>
+</body>
+
+</html>

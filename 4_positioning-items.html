@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        div {
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        .logout {
+            /* margin-left: auto; */
+            /* Pushes the logout to the far left side of the page away from the other flex items */
+        }
+
+        .search {
+            /* margin-left: auto; */
+            /* next we did margin left auto to the search div and it moved both search and logout to the right because search is before logout in the markup */
+        }
+
+        .home {
+            /* margin-left: auto; */
+            /* Then We added it to home and they all went to the right because it is before search and logout */
+            margin-right: auto;
+        }
+    </style>
+
+    <!-- 
+
+        Sometimes flex properties (space-between, space-around, etc... Don't do what you want them to do. In that case, you can use margin auto to achieve the layouts you want.)
+
+
+     -->
+</head>
+
+<body>
+    <nav class="container">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+    </nav>
+</body>
+
+</html>

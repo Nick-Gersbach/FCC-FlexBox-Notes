@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrap</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            padding: 10px;
+            background-color: #ffeead;
+        }
+
+        .container {
+            display: flex;
+            border: 5px solid #ffcc5c;
+            flex-wrap: wrap;
+        }
+
+        .container div {
+            width: 300px;
+        }
+
+        div {
+
+            font-size: 18px;
+        }
+
+        .home {
+            background: lightblue;
+            padding: 9px 24px;
+
+        }
+
+        .search {
+            background: coral;
+            padding: 9px 24px;
+        }
+
+        .logout {
+            background: greenyellow;
+            padding: 9px 24px;
+
+        }
+    </style>
+
+    <!-- 
+        flex-wrap: wrap; will automatically stack flex items on a new line when the container get to small on smaller devices.
+
+        By default flex-wrap is set to no wrap so you have to put wrap yourself.
+    
+
+     -->
+</head>
+
+<body>
+    <nav class="container">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+    </nav>
+</body>
+
+</html>

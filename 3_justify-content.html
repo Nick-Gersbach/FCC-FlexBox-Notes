@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 5px solid #ffcc5c;
+            display: flex;
+            /* We set the container to display flex and all of the nav items lines up next to each other side by side. */
+
+            justify-content: space-between;
+
+            /* justify-content: space-evenly; */
+
+        }
+
+        div {
+            margin: 5px 8px;
+            /* We have the divs a margin of 5px so the nav divs seperated a little */
+        }
+    </style>
+
+    <!-- 
+        Justify Content Notes
+
+    You can control where your flex items go using justify-content.
+
+justify-content: flex-start - The default setting for flex items. Starts them on the users left hand side of the page.
+
+flex-end - sets content to the right hand side of the page
+
+center - centers the flex items in the page like text align center would.
+
+space-between - spaces each flex item out evenly across the whole page (see example of this page). This is used for layouts with a logo on one side and navigation on the other. Also for navigation with a left (logo) center(main menu) and right hand (additonal menu options) As long as each menu is in a seperate container, flexbox will seperate them evenly across the navigation bar. 
+
+space around - gives each item an equal amount of space on the left and right sides.
+
+space-evenly - puts items in the center of the page with an equal amount of margin on the left and right.
+
+     -->
+</head>
+
+<body>
+    <nav class="container">
+        <div>Home</div>
+        <div>Search</div>
+        <div>Logout</div>
+    </nav>
+</body>
+
+</html>
